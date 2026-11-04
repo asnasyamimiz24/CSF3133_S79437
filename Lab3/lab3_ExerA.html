@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CampusBake - Online Order</title>
+</head>
+<body>
+
+<!-- HEADER SECTION -->
+<div id="header">
+<h1>CampusBake&reg; 
+<span>Freshly Baked, Happily Shared!</span>
+</h1>
+<p>Welcome to our campus bakery online ordering page.</p>
+ </div>
+
+<!-- NAVIGATION SECTION -->
+<div id="nav">
+<a href="#home">Home</a> |
+<a href="#price-list">Price List</a> |
+<a href="#order-form">Place an Order</a>
+</div>
+
+<!-- CONTENT SECTION -->
+<div id="content">
+
+<h2 id="home">Welcome to CampusBake</h2>
+
+<p> Welcome to <strong>CampusBake</strong>, where we offer <em>delicious and freshly baked treats</em> for everyone. Enjoy our <span>variety of cakes and cupcakes</span> made with care and quality ingredients. We are here to make your day a little sweeter!
+</p>
+
+<!-- ORDER FORM SECTION -->
+<h2 id="order-form">Online Order Form</h2>
+
+<div id="order-details">
+
+<form action="#" method="get"
+oninput="this.elements['totalPrice'].value =
+(Number(this.elements['cupcakes'].value) * 3 +
+Number(this.elements['cakeSlices'].value) * 5).toFixed(2)">
+
+<p> 
+<label for="customerName">Customer Name:</label> 
+<input type="text" id="customerName"
+name="customerName"
+placeholder="Enter your full name"
+required autofocus>
+</p>
+
+<p>
+<label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="phone"
+placeholder="e.g. 0123456789" required>
+</p>
+
+<p>
+<label for="email">E-mail:</label>
+<input type="email" id="email" name="email"
+placeholder="example@email.com" required>
+</p>
+
+<p>
+<label for="pickupDate">Pick-up Date:</label>
+<input type="date" id="pickupDate"
+name="pickupDate">
+</p>
+
+<p>
+<label for="pickupTime">Pick-up Time:</label>
+<input type="time" id="pickupTime"
+name="pickupTime">
+</p>
+
+<p>
+<label for="flavour">Choose Flavour:</label>
+<input type="text" id="flavour"
+name="flavour" list="flavourOptions"
+placeholder="Select a flavour">
+
+<datalist id="flavourOptions">
+<option value="Chocolate">
+<option value="Vanilla">
+<option value="Strawberry">
+<option value="Red Velvet">
+<option value="Matcha">
+</datalist>
+</p>
+
+<p>
+<label for="icingColour">Icing Colour:</label>
+<input type="color" id="icingColour"
+name="icingColour" value="#ff99cc">
+</p>
+
+<p>
+<label for="sweetness">Sweetness Level:</label>
+<input type="range" id="sweetness"
+name="sweetness" min="1" max="5"
+step="1" value="3">
+</p>
+
+<!-- PRICE CALCULATOR SECTION -->
+<h3>Price Calculator</h3>
+
+<p>
+<label for="cupcakes">
+Cupcakes (RM 3.00 each):
+</label>
+<input type="number" id="cupcakes"
+name="cupcakes" min="0" value="0">
+</p>
+
+<p>
+<label for="cakeSlices">
+Cake Slices (RM 5.00 each):
+</label>
+<input type="number" id="cakeSlices"
+name="cakeSlices" min="0" value="0">
+</p>
+
+<p>
+Total Price: RM
+<output name="totalPrice"
+for="cupcakes cakeSlices">0.00</output>
+</p>
+
+<!-- SUBMIT AND RESET BUTTONS -->
+<p>
+<button type="submit">Submit Order</button>
+<button type="reset">Clear Form</button>
+</p>
+
+</form>
+
+</div>
+</div>
+
+<!-- SIDEBAR SECTION: PRICE LIST -->
+<div id="sidebar">
+
+<h2 id="price-list">Price List</h2>
+
+<ul>
+<li>Chocolate Cupcake - RM 3.00</li>
+<li>Vanilla Cupcake - RM 3.00</li>
+<li>Strawberry Cupcake - RM 3.00</li>
+<li>Red Velvet Cake Slice - RM 5.00</li>
+<li>Chocolate Cake Slice - RM 5.00</li>
+</ul>
+
+<p>Orders &gt; 10 pieces receive a free drink!</p>
+
+<p>Every treat is prepared with care&nbsp;and freshness.</p>
+
+<p>Prices are shown in RM (Malaysian Ringgit).</p>
+
+</div>
+
+<!-- FOOTER SECTION -->
+<div id="footer">
+
+<p>&copy; 2026 CampusBake&reg;. All rights reserved.</p>
+
+<p>Thank you for supporting our campus bakery!</p>
+
+</div>
+
+</body>
+</html>
+
+<!--
+TESTING OBSERVATIONS:
+
+1. When the Submit Order button is clicked while all required fields are empty, the browser prevents submission and displays a validation message asking the user to complete the required fields.
+
+2. When "myemail" is entered into the e-mail field, the browser rejects the input because it is not a valid e-mail address format.
+
+3. The total price is calculated automatically when the cupcake or cake slice quantity changes.
+
+4. Example: 2 cupcakes + 1 cake slice = RM 11.00.
+-->
