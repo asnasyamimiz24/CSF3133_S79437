@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visit Terengganu</title>
+
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Internal CSS -->
+<style>
+h1 {
+text-align: center;
+letter-spacing: 2px;
+}
+
+#trip {
+background-color: #fff8ed;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+<h1>Discover Beautiful Terengganu</h1>
+<p class="center">
+Experience beautiful islands, culture and local food.
+</p>
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+<ul>
+<li><a href="#destinations">Destinations</a></li>
+<li><a href="#video">Video</a></li>
+<li><a href="#trip">Trip Form</a></li>
+</ul>
+</nav>
+
+<!-- Destinations Section -->
+<section id="destinations">
+<h2>Popular Destinations</h2>
+
+<div class="destination-container">
+
+<article class="card">
+<h3>Redang Island</h3>
+<p>
+Best for luxury resorts and crystal-clear turquoise waters. Redang features stunning, high-end beachfront resorts, powdery white sand, and vibrant coral reefs perfect for diving right off the beach
+</p>
+
+<p>
+<span class="old-price">RM 350</span>
+<span class="price">RM 250</span> per person
+</p>
+</article>
+
+<article class="card">
+<h3>Perhentian Island</h3>
+<p>
+Best for budget-friendly beach vibes and marine life. Divided into Perhentian Kecil (popular with backpackers for its nightlife and fire shows at Long Beach) and Perhentian Besar (quieter, ideal for families and couples). The snorkeling here gives you a very high chance of swimming with sea turtles and harmless reef sharks.
+</p>
+
+<p>
+<span class="old-price">RM 320</span>
+<span class="price">RM 220</span> per person
+</p>
+</article>
+
+<article class="card">
+<h3>Kenyir Lake</h3>
+<p>
+Kenyir Lake is the largest man-made lake in Southeast Asia, located in Terengganu, Malaysia. It is a premier eco-tourism destination surrounded by a 130-million-year-old tropical rainforest. Discover a peaceful lake surrounded by green forests and waterfalls.
+</p>
+
+<p>
+<span class="old-price">RM 280</span>
+<span class="price">RM 199</span> per person
+</p>
+</article>
+
+</div>
+
+<!-- Meter Element -->
+<p class="seat-info">
+Trip seats filled:
+<meter min="0" max="40" value="28">
+28 out of 40
+</meter>
+28 / 40 seats
+</p>
+</section>
+
+<!-- Video Section -->
+<section id="video">
+<h2>Explore Terengganu</h2>
+
+<figure>
+<video controls width="600" height="340">
+<source src="terengganu.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<figcaption class="caption">
+Discover the beauty and attractions of Terengganu.
+</figcaption>
+</figure>
+</section>
+
+<!-- Trip Form Section -->
+<section id="trip">
+<h2>Plan Your Trip</h2>
+
+<p>
+Complete this form to tell us about your travel interests.
+</p>
+
+<form class="trip-form" action="#" method="post">
+
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+
+<label for="email">E-mail:</label>
+<input type="email" id="email" name="email" required>
+
+<p><strong>Traveller Type:</strong></p>
+
+<label>
+<input type="radio" name="traveller" value="Student">
+Student
+</label>
+
+<label>
+<input type="radio" name="traveller" value="Staff">
+Staff
+</label>
+
+<label>
+<input type="radio" name="traveller" value="Public">
+Public
+</label>
+
+<p><strong>Interests:</strong></p>
+
+<label>
+<input type="checkbox" name="interest" value="Islands">
+Islands
+</label>
+
+<label>
+<input type="checkbox" name="interest" value="Food">
+Food
+</label>
+
+<label>
+<input type="checkbox" name="interest" value="Culture">
+Culture
+</label>
+
+<label>
+<input type="checkbox" name="interest" value="Nature">
+Nature
+</label>
+
+<button type="submit">Submit</button>
+
+</form>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>&copy; 2026 Visit Terengganu Tourism.</p>
+
+<address>
+Contact us:
+<a href="mailto:info@visit-terengganu.com">
+info@visit-terengganu.com
+</a>
+</address>
+</footer>
+
+</body>
+</html>
